@@ -6,6 +6,14 @@ World of Warcraft combat logs.
 
 - Python 3.x
 - Tkinter (bundled with the default Python installation)
+- requests
+- beautifulsoup4
+
+Install dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -18,7 +26,10 @@ World of Warcraft combat logs.
 2. Click **Open Combat Log** and select a log file (e.g. `WowCombatLog.txt` or
    the provided `sample_log.txt`).
 3. Choose your character from the drop-down list and click **Analyze** to see a
-   damage summary.
+   detailed summary including rotation, downtime, and consumable usage.
+
+The app also fetches the latest raid DPS information from
+[SimulationCraft](https://www.simulationcraft.org/).
 
 ## Building a Stand-Alone Executable (Windows)
 
